@@ -1,5 +1,7 @@
 var mysql = require("mysql");
 var inquirer = require("inquirer");
+var Table = require("cli-table");
+const chalk = require("chalk");
 
 var connection = mysql.createConnection({
   host: "localhost",
@@ -21,20 +23,29 @@ connection.connect(function(err) {
   queryAllProducts();
 });
 
-function queryAllProducts() {
+function queryAllProducts(res) {
   connection.query("SELECT * FROM products", function(err, res) {
+    var table = new Table({
+      head: [
+        "item_id",
+        "product_name",
+        "department_name",
+        "price",
+        "stock_quantity"
+      ],
+      colWidths: [10, 30, 30, 10, 20]
+    });
     for (var i = 0; i < res.length; i++) {
-      console.log(
-        res[i].item_id +
-          " | " +
-          res[i].product_name +
-          " | " +
-          "$" +
-          res[i].price +
-          " | " +
-          res[i].stock_quantity
-      );
+      // table is an Array, so you can `push`, `unshift`, `splice` and friends
+      table.push([
+        res[i].item_id,
+        res[i].product_name,
+        res[i].department_name,
+        res[i].price,
+        res[i].stock_quantity
+      ]);
     }
+    console.log(chalk.black.bgWhite(table.toString()));
     console.log("-----------------------------------");
     inquirer
       .prompt([
