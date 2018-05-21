@@ -1,7 +1,12 @@
 # Bamazon
 
+# Customer
+## Customer purchase
+![ezgif com-video-to-gif](https://user-images.githubusercontent.com/35464374/40334341-c12d39fa-5d22-11e8-9e2d-779a16745d48.gif)
 
-## See product list
+
+# Manager
+## See products list
 ![bamazonsnipproductslist](https://user-images.githubusercontent.com/35464374/40330705-6ad935b8-5d13-11e8-9a99-c0678ebce4cf.gif)
 
 
