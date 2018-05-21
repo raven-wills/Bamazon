@@ -79,18 +79,6 @@ var productsList = function(productList) {
     colWidths: [10, 30, 30, 10, 20]
   });
   for (var i = 0; i < productList.length; i++) {
-    // console.log(
-    //   productList[i].item_id +
-    //     " | " +
-    //     productList[i].product_name +
-    //     " | " +
-    //     "$" +
-    //     productList[i].price +
-    //     " | " +
-    //     productList[i].stock_quantity
-
-    // );
-
     // table is an Array, so you can `push`, `unshift`, `splice` and friends
     table.push([
       productList[i].item_id,
@@ -104,22 +92,16 @@ var productsList = function(productList) {
   //   console.log("-----------------------------------");
 };
 // "View Low Inventory",
-var lowInventory = function(lowStockList) {
-  for (var i = 0; i < lowStockList.length; i++) {
-    if (lowStockList[i].stock_quantity < 5) {
-      console.log(
-        lowStockList[i].item_id +
-          " | " +
-          lowStockList[i].product_name +
-          " | " +
-          "$" +
-          lowStockList[i].price +
-          " | " +
-          lowStockList[i].stock_quantity
-      );
+var lowInventory = function(currentStock) {
+  var lowInventory = [];
+  for (var i = 0; i < currentStock.length; i++) {
+    if (currentStock[i].stock_quantity < 5) {
+      lowInventory.push(currentStock[i]);
     }
   }
+  productsList(lowInventory);
 };
+
 // "Add to Inventory",
 var changeStockQuantity = function(changeStockQuantity) {
   for (var i = 0; i < changeStockQuantity.length; i++) {
@@ -176,6 +158,7 @@ var changeStockQuantity = function(changeStockQuantity) {
       );
     });
 };
+
 // "Add New Product"
 var addNewProduct = function(newProduct) {
   inquirer
