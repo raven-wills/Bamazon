@@ -104,18 +104,7 @@ var lowInventory = function(currentStock) {
 
 // "Add to Inventory",
 var changeStockQuantity = function(changeStockQuantity) {
-  for (var i = 0; i < changeStockQuantity.length; i++) {
-    console.log(
-      changeStockQuantity[i].item_id +
-        " | " +
-        changeStockQuantity[i].product_name +
-        " | " +
-        "$" +
-        changeStockQuantity[i].price +
-        " | " +
-        changeStockQuantity[i].stock_quantity
-    );
-  }
+  productsList(changeStockQuantity);
   console.log("-----------------------------------");
   inquirer
     .prompt([
