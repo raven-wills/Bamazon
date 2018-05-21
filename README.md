@@ -4,6 +4,8 @@
 ## Customer purchase
 ![ezgif com-video-to-gif](https://user-images.githubusercontent.com/35464374/40334341-c12d39fa-5d22-11e8-9e2d-779a16745d48.gif)
 
+<img width="779" alt="screen shot 2018-05-21 at 6 24 40 pm" src="https://user-images.githubusercontent.com/35464374/40334614-61b40e16-5d24-11e8-9975-0435abeb539a.png">
+
 
 # Manager
 ## See products list
