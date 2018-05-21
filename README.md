@@ -15,6 +15,8 @@
 ## See products that have below 5 items in stock
 ![bamazonsniplowinventory](https://user-images.githubusercontent.com/35464374/40330888-0d08b282-5d14-11e8-8076-669f1ce83e62.gif)
 
+<img width="768" alt="screen shot 2018-05-21 at 3 33 57 pm" src="https://user-images.githubusercontent.com/35464374/40334659-ae236b5c-5d24-11e8-973c-b9daf899e209.png">
+
 
 ## Change an items stock quantity
 ![bamazonsnipchangestockquantity](https://user-images.githubusercontent.com/35464374/40330897-15f9f040-5d14-11e8-892f-b7936668e6c8.gif)
