@@ -8,6 +8,7 @@ The customer is prompted to enter the item_id of the product they would like to 
 ![ezgif com-video-to-gif](https://user-images.githubusercontent.com/35464374/40334341-c12d39fa-5d22-11e8-9e2d-779a16745d48.gif)
 
 Once they've made their selections, they are told whether that particular product has enough in stock. If there is, the price for their items are calculated and displayed.
+
 <img width="779" alt="screen shot 2018-05-21 at 6 24 40 pm" src="https://user-images.githubusercontent.com/35464374/40334614-61b40e16-5d24-11e8-9975-0435abeb539a.png">
 
 
@@ -32,10 +33,16 @@ The user also has the option to single out all items that have a stock quantity 
 
 
 ## Change an items stock quantity
-Any item in the products list can have their stock quantity changed. After the user is inputs an item_id and new stock quantity, they are shown the item with the new total.
+Any item in the products list can have their stock quantity changed. 
 
 ![bamazonsnipchangestockquantity](https://user-images.githubusercontent.com/35464374/40330897-15f9f040-5d14-11e8-892f-b7936668e6c8.gif)
 
+After the user inputs an item_id and new stock quantity, they are shown the item with the new total.
+
+<img width="786" alt="screen shot 2018-05-21 at 7 48 45 pm" src="https://user-images.githubusercontent.com/35464374/40336598-19f8cfce-5d30-11e8-8d69-541449e6d05e.png">
+
 
 ## Add an item to inventory
+To add a new item, the user must enter a product name, department name, price, and stock quantity (The item_id is automatically generated. Each item has their own unique number).
+
 ![bamazonsnipaddinventoryitem](https://user-images.githubusercontent.com/35464374/40330901-1b44ec76-5d14-11e8-8132-5ef5a587ecaa.gif)
