@@ -4,6 +4,7 @@
 The customer section of Bamazon allows the user to view the product list, and purchase items off of it.
 ## Customer purchase
 The customer is prompted to enter the item_id of the product they would like to purchase. Then they are prompted to select a quantity for that item.
+
 ![ezgif com-video-to-gif](https://user-images.githubusercontent.com/35464374/40334341-c12d39fa-5d22-11e8-9e2d-779a16745d48.gif)
 
 Once they've made their selections, they are told whether that particular product has enough in stock. If there is, the price for their items are calculated and displayed.
